@@ -45,10 +45,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp E  &kp R  &kp T                                &kp Y        &kp U   &lt 5 I                &kp O            &kp P
-&kp A             &kp S  &kp D  &kp F  &kp G                                &kp H        &kp J   &kp K                  &kp L            &mkp LCLK
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B                                &kp N        &kp M   &mkp MB1               &mkp MB3         &mkp MB2
-&kp LEFT_SHIFT                         &kp N1  &kp N2      &lt 3 BACKSPACE  &lt 2 ENTER  &kp N5  &mt RIGHT_SHIFT LANG1  &lt 3 BACKSPACE  &lt 5 ESCAPE
+&kp Q             &kp W  &kp E  &kp R  &kp T                                &kp Y        &kp U   &kp I     &kp O     &kp P
+&kp A             &kp S  &kp D  &kp F  &kp G                                &kp H        &kp J   &kp K     &kp L     &mkp LCLK
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B                                &kp N        &kp M   &mkp MB1  &mkp MB3  &mkp MB2
+&kp LEFT_SHIFT                         &kp N1  &kp N2      &lt 3 BACKSPACE  &lt 2 ENTER  &kp N5  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -72,32 +72,12 @@
             >;
         };
 
-        ARROW {
-            bindings = <
-&kp ESCAPE      &mkp MB4                &kp UP_ARROW    &mkp MB5                 &trans                       &kp LG(LEFT_ARROW)          &kp LA(LEFT_ARROW)      &kp UP_ARROW    &kp RA(RIGHT_ARROW)      &kp RG(RIGHT_ARROW)
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                      &kp LC(LS(TAB))             &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp RC(TAB)
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans                       &kp LA(LG(LC(LEFT_ARROW)))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(F))   &kp RG(RA(RIGHT_ARROW))  &kp RA(RC(RG(RIGHT_ARROW)))
-&trans                                                                           &trans   &trans      &trans  &trans                      &trans                  &trans          &kp BACKSPACE            &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        MOUSE {
+        Layer {
             bindings = <
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
 &trans                                &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans          &trans          &trans         &trans            &trans
-&trans  &trans  &trans  &trans  &trans                      &trans          &trans          &trans         &trans            &trans
-&trans  &trans  &trans  &trans  &trans                      &trans          &trans          &trans         &trans            &trans
-&trans                          &trans  &trans      &trans  &kp LS(LG(N5))  &kp LS(LG(N4))  &kp LC(SPACE)  &kp LC(UP_ARROW)  &trans
             >;
         };
 
@@ -111,6 +91,15 @@
         };
 
         layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans                          &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
