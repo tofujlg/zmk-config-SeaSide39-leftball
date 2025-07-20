@@ -65,8 +65,8 @@
 
         NUM {
             bindings = <
-&trans  &kp F9        &kp F10       &kp F11       &kp F12                      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &kp MINUS
-&trans  &kp F5        &kp F6        &kp F7        &kp F8                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK     &kp SLASH
+&trans  &kp N7        &kp N8        &kp N9        &kp F12                      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &kp MINUS
+&trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F8                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK     &kp SLASH
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F4                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE  &kp COLON
 &trans                                            &trans   &trans      &trans  &trans        &trans        &trans        &kp NUMBER_0     &kp PERIOD
             >;
