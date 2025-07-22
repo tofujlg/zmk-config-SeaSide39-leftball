@@ -64,19 +64,19 @@
 
         NUM {
             bindings = <
-&kp N0  &kp N7        &kp N8        &kp N9        &kp LEFT_BRACKET                            &kp MINUS      &kp NON_US_BACKSLASH  &trans        &trans     &trans
-&trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET                           &kp LEFT       &kp DOWN              &kp UP_ARROW  &kp RIGHT  &kp GRAVE
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                                      &kp SEMICOLON  &kp EQUAL             &trans        &trans     &kp SQT
-&trans                                            &trans             &kp LS(TAB)      &trans  &trans         &trans                &trans        &trans     &trans
+&kp N0  &kp N7        &kp N8        &kp N9        &kp LEFT_BRACKET                            &kp MINUS      &kp BACKSLASH  &trans        &trans     &trans
+&trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET                           &kp LEFT       &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp GRAVE
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                                      &kp SEMICOLON  &kp EQUAL      &trans        &trans     &kp SQT
+&trans                                            &trans             &kp LS(TAB)      &trans  &trans         &trans         &trans        &trans     &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                      &trans  &trans          &trans        &trans    &trans
-&trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans                      &trans  &kp LEFT_SHIFT  &kp LEFT_WIN  &mkp MB3  &mkp MB2
-&trans  &trans    &trans    &trans    &trans                      &trans  &trans          &trans        &trans    &trans
-&trans                                &trans  &trans      &trans  &trans  &trans          &trans        &trans    &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F12                      &trans  &trans          &trans        &trans    &trans
+&trans  &kp F4  &kp F5  &kp F6  &kp F11                      &trans  &kp LEFT_SHIFT  &kp LEFT_WIN  &mkp MB3  &mkp MB2
+&trans  &kp F1  &kp F2  &kp F3  &kp F10                      &trans  &trans          &trans        &trans    &trans
+&trans                          &trans   &trans      &trans  &trans  &trans          &trans        &trans    &trans
             >;
         };
     };
